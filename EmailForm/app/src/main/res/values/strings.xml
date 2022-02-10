@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EmailForm</string>
+    <string name="button">Send</string>
+    <string-array name="Profession">
+        <item>Student</item>
+        <item>Teacher</item>
+        <item>Director</item>
+        <item>Accountant</item>
+        <item>Guard</item>
+        <item>Receptionist</item>
+    </string-array>
+</resources>
