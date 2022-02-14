@@ -3,7 +3,6 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,7 +11,7 @@
         android:textStyle="bold"
         android:textColor="#b765bc"
         android:layout_marginTop="50dp"
-        android:textSize="32sp" />
+        android:textSize="32sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,15 +19,13 @@
         android:text="National College Health Club"
         android:textStyle="bold"
         android:textColor="#b765bc"
-        android:textSize="18dp" />
-
+        android:textSize="18dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp">
-
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -36,7 +33,6 @@
             android:textSize="18dp"
             android:padding="25px"
             android:inputType="textPersonName"/>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
             <EditText
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
@@ -90,7 +86,6 @@
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:inputType="number"/>
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -110,7 +105,6 @@
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:inputType="number"/>
-
         </LinearLayout>
         <EditText
             android:layout_marginTop="25dp"
@@ -127,27 +121,24 @@
             android:textSize="18dp"
             android:inputType="text"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical">
-
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:outlineSpotShadowColor="#b765bc"
-            android:text="I have read,understand and accepted membership rules" />
-
+            android:text="I have read,understand and accepted membership rules"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:backgroundTint="#b765bc"
             android:padding="30px"
-            android:text="Submit" />
+            android:text="Submit"/>
     </LinearLayout>
 </LinearLayout>

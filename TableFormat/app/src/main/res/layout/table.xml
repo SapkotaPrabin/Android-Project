@@ -3,15 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TableRow
-        android:layout_weight="1"
-        android:background="#D8D810">
+        android:layout_weight="0.7">
+        <TextView
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:background="#2FFCFA">
+        </TextView>
+        <TextView
+            android:layout_weight="0.8"
+            android:background="#F2BA29"
+            android:layout_height="match_parent">
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:layout_weight="0.7">
+        <TextView
+            android:layout_weight="1.2"
+            android:layout_height="match_parent"
+            android:background="#9F0808">
+        </TextView>
+        <TextView
+            android:layout_weight="0.8"
+            android:background="#F2BA29"
+            android:layout_height="match_parent">
+        </TextView>
     </TableRow>
     <TableRow
         android:layout_weight="1"
-        android:background="#1B910D">
+        android:background="#275A0F">
     </TableRow>
     <TableRow
         android:layout_weight="1"
-        android:background="#D8D810">
+        android:background="#F2BA29">
     </TableRow>
 </TableLayout>
