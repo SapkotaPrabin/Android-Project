@@ -59,7 +59,7 @@
         app:layout_constraintRight_toLeftOf="@id/radio"
         app:layout_constraintButtom_toTopOf="@id/cw"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name" />
+        app:layout_constraintTop_toBottomOf="@id/name"/>
     <RadioGroup
         android:id="@+id/radio"
         android:layout_height="wrap_content"
