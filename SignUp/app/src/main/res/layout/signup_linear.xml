@@ -7,18 +7,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Membership Form"
+        android:text="@string/form"
         android:textStyle="bold"
-        android:textColor="#b765bc"
+        android:textColor="@color/purple"
         android:layout_marginTop="50dp"
         android:textSize="32sp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="National College Health Club"
+        android:text="@string/club"
         android:textStyle="bold"
-        android:textColor="#b765bc"
+        android:textColor="@color/purple"
         android:textSize="18dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Full Name"
+            android:hint="@string/name"
             android:textSize="18dp"
             android:padding="25px"
             android:inputType="textPersonName"/>
@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="@string/gender"
                 android:textSize="18dp"
                 android:layout_marginTop="10dp"/>
             <RadioGroup
@@ -51,19 +51,19 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="M"
+                    android:text="@string/male"
                     android:textSize="17dp"
                     android:layout_marginLeft="10dp"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="F"
+                    android:text="@string/female"
                     android:textSize="17dp"
                     android:layout_marginLeft="10dp"/>
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Other"
+                    android:text="@string/other"
                     android:textSize="17dp"
                     android:layout_marginLeft="10dp"/>
             </RadioGroup>
@@ -76,13 +76,13 @@
             <EditText
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:hint="Current Weight"
+                android:hint="@string/cw"
                 android:textSize="18dp"
                 android:inputType="number"/>
             <EditText
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:hint="Height"
+                android:hint="@string/height"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:inputType="number"/>
@@ -95,13 +95,13 @@
             <EditText
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:hint="Goal Weight"
+                android:hint="@string/gw"
                 android:textSize="18dp"
                 android:inputType="number"/>
             <EditText
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:hint="Age"
+                android:hint="@string/age"
                 android:textSize="18dp"
                 android:layout_marginLeft="20dp"
                 android:inputType="number"/>
@@ -110,14 +110,14 @@
             android:layout_marginTop="25dp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Phone"
+            android:hint="@string/phone"
             android:textSize="18dp"
             android:inputType="phone"/>
         <EditText
             android:layout_marginTop="25dp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:hint="Address"
+            android:hint="@string/address"
             android:textSize="18dp"
             android:inputType="text"/>
     </LinearLayout>
@@ -131,14 +131,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
-            android:outlineSpotShadowColor="#b765bc"
-            android:text="I have read,understand and accepted membership rules"/>
+            android:outlineSpotShadowColor="@color/purple"
+            android:text="@string/checkbox"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:backgroundTint="#b765bc"
+            android:backgroundTint="@color/purple"
             android:padding="30px"
-            android:text="Submit"/>
+            android:text="@string/button"/>
     </LinearLayout>
 </LinearLayout>
