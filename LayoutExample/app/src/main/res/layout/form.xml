@@ -4,6 +4,7 @@
     android:layout_width="350dp"
     android:layout_height="match_parent">
     <EditText
+        android:id="@+id/to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -12,6 +13,7 @@
         android:layout_marginLeft="20dp"
         android:inputType="textEmailAddress"/>
     <EditText
+        android:id="@+id/subject"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Subject"
@@ -20,12 +22,9 @@
         android:layout_marginTop="20dp"
         android:shadowColor="#535b9f"
         android:inputType="textEmailSubject"/>
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/Profession"
-        android:spinnerMode="dropdown"/>
+
     <EditText
+        android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:gravity="top"
@@ -35,7 +34,7 @@
         android:layout_marginLeft="20dp"
         android:inputType="textImeMultiLine"/>
     <Button
-        android:id="@+id/example"
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"

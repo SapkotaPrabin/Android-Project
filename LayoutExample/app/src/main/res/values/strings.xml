@@ -23,4 +23,8 @@
     <string name="a3">Ans- SQlite database</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string-array name="Profession">
+        <item>Student</item>
+        <item>Teacher</item>
+    </string-array>
 </resources>
