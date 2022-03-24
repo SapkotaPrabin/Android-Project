@@ -85,18 +85,19 @@
         android:inputType="number"
         android:padding="12dp"
         android:textSize="20sp" />
+
     <EditText
         android:id="@+id/height"
-        android:layout_marginTop="30dp"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:hint="@string/height"
-        android:textSize="20sp"
-        android:padding="12dp"
-        android:inputType="number"
-        android:importantForAutofill="no"
+        android:layout_below="@id/gender"
         android:layout_alignParentEnd="true"
-        android:layout_below="@id/gender"/>
+        android:layout_marginTop="30dp"
+        android:hint="@string/height"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:padding="12dp"
+        android:textSize="20sp" />
     <EditText
         android:id="@+id/gw"
         android:layout_marginTop="10dp"
