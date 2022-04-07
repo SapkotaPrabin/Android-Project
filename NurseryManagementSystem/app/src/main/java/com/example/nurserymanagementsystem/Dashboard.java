@@ -25,7 +25,7 @@ import com.google.android.material.tabs.TabLayoutMediator;
 public class Dashboard extends AppCompatActivity  implements PopupMenu.OnMenuItemClickListener {
     ViewPager2 viewPager2;
     TabLayout tabLayout;
-    TextView profile_image;
+    ImageView profile_image;
     Button add_flower;
 
     @Override
@@ -37,7 +37,17 @@ public class Dashboard extends AppCompatActivity  implements PopupMenu.OnMenuIte
         tabLayout = findViewById(R.id.tabLayout);
         viewPager2.setAdapter(new FragmentAdapter(this));
         profile_image = findViewById(R.id.profile_icon);
-        profile_image.setText("Testing");
+
+
+        profile_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"Image Clicked",Toast.LENGTH_SHORT).show();
+//                PopupMenu popupMenu = new PopupMenu(Dashboard.this,profile_image);
+//                popupMenu.getMenuInflater().inflate(R.menu.profile_popup,popupMenu.getMenu());
+//                popupMenu.show();
+            }
+        });
 //        add_flower = findViewById(R.id.add_flower);
 //        add_flower.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -49,15 +59,7 @@ public class Dashboard extends AppCompatActivity  implements PopupMenu.OnMenuIte
 //        });
 
 //
-        profile_image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(),"Image Clicked",Toast.LENGTH_SHORT).show();
-//                PopupMenu popupMenu = new PopupMenu(Dashboard.this,profile_image);
-//                popupMenu.getMenuInflater().inflate(R.menu.profile_popup,popupMenu.getMenu());
-//                popupMenu.show();
-            }
-        });
+
 
         TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager2,
                 new TabLayoutMediator.TabConfigurationStrategy() {
