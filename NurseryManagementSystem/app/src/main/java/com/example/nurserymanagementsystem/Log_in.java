@@ -35,7 +35,7 @@ public class Log_in extends Activity {
                 if(name.getText().toString().equals("")){
                     if(password.getText().toString().equals("")){
                         Toast.makeText(getApplicationContext(),"Log In Successfully !!!",Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(Log_in.this,Dashboard.class);
+                        Intent intent = new Intent(Log_in.this, Dashboard.class);
                         startActivity(intent);
                     }else {
                         Toast.makeText(getApplicationContext(), "Incorrect Password", Toast.LENGTH_SHORT).show();

@@ -12,7 +12,7 @@ import android.app.FragmentTransaction;
 
 import androidx.annotation.Nullable;
 
-public class FirstActivity extends Activity {
+public class MainActivity extends Activity {
     Button btnFirst,btnSecond;
 
     @Override

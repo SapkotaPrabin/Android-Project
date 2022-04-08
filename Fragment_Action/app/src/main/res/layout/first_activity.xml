@@ -16,8 +16,9 @@
 
     <fragment
         android:id="@+id/myfragment"
-        android:name="com.example.fragment_action.Fragment1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:name="com.example.fragment_action.Fragment1"/>
+
 
 </LinearLayout>

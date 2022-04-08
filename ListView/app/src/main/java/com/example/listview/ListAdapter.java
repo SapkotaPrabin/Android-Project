@@ -24,7 +24,6 @@ public class ListAdapter extends ArrayAdapter<User> {
        User user = getItem(position);
        if(convertView == null){
            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
-
        }
         ImageView imageView = convertView.findViewById(R.id.profile_pic);
         TextView userName = convertView.findViewById(R.id.personName);
