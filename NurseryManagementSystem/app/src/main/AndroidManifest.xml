@@ -18,9 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Log_in"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".Sign_Up"/>
         <activity android:name=".Blank"
             tools:ignore="Instantiatable" />
+
     </application>
 
 </manifest>

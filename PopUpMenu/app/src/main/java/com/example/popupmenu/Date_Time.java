@@ -30,7 +30,7 @@ public class Date_Time extends AppCompatActivity {
         setContentView(R.layout.date_time);
         dateformat = findViewById(R.id.date_format);
         Calendar calendar = Calendar.getInstance();
-        timeshow = findViewById(R.id.time);
+
         dateformat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +46,7 @@ public class Date_Time extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
+        timeshow = findViewById(R.id.time);
         timeshow.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

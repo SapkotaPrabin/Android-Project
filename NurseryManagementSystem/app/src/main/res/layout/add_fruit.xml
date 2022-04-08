@@ -7,10 +7,10 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Flower Name"
+        android:hint="Fruit Name"
         android:paddingHorizontal="8dp"
         android:inputType="text"
-        android:id="@+id/flower_name"/>
+        android:id="@+id/fruit_name"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,14 +21,14 @@
             android:layout_height="wrap_content"
             android:hint="Number of Plants"
             android:inputType="number"
-            android:id="@+id/flower_num"/>
+            android:id="@+id/fruit_num"/>
         <EditText
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:hint="Price"
             android:gravity="center"
             android:inputType="number"
-            android:id="@+id/flower_price"/>
+            android:id="@+id/fruit_price"/>
     </LinearLayout>
     <EditText
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/add"
-        android:text="Add Flower"
+        android:text="Add Fruit"
         android:paddingHorizontal="20dp"
-        android:id="@+id/add_flower"/>
+        android:id="@+id/add_fruit"/>
 </LinearLayout>

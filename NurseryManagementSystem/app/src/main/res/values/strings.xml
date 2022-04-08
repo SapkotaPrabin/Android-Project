@@ -16,6 +16,7 @@
     <string name="add_flower">Add Flower</string>
     <string name="add_fruit">Add Fruit</string>
     <string name="add_forest">Add Forest</string>
+    <string name="add_veg">Add Vegetable</string>
     <string name="signup_head">Create New Account</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
