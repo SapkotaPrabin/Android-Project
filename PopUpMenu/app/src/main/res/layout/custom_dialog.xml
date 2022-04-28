@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-<EditText
+    <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:hint="Enter First Number"
@@ -29,5 +29,4 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:id="@+id/txtResult"/>
-
 </LinearLayout>

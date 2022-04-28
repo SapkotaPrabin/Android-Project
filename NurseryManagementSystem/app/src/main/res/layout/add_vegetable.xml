@@ -37,7 +37,7 @@
         android:inputType="date"
         android:onClick="Date_Check"
         android:paddingHorizontal="8dp"
-        android:id="@+id/sow_date"/>
+        android:id="@+id/veg_sow_date"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,5 +45,5 @@
         android:background="@drawable/add"
         android:text="Add Vegetable"
         android:paddingHorizontal="20dp"
-        android:id="@+id/add_vegr"/>
+        android:id="@+id/veg_add_db"/>
 </LinearLayout>

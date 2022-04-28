@@ -1,5 +1,4 @@
 package com.example.popupmenu;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -8,10 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.Nullable;
-
 public class ThirdActivity extends Activity {
     Button btnClick2;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +20,6 @@ public class ThirdActivity extends Activity {
                 showDialog();
             }
         });
-
     }
     public void showDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(ThirdActivity.this);
@@ -34,7 +30,6 @@ public class ThirdActivity extends Activity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int id) {
-
                     }
                 });
         builder.setNegativeButton(
@@ -48,5 +43,4 @@ public class ThirdActivity extends Activity {
         AlertDialog alert = builder.create();
         alert.show();
     }
-
 }

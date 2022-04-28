@@ -43,28 +43,37 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:paddingHorizontal="15dp"
+            android:paddingHorizontal="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="10sp"
             android:id="@+id/flower"
-            android:text="Flower"/>
+            android:text="Flower"
+            tools:ignore="SmallSp" />
         <Button
-            android:paddingHorizontal="15dp"
+            android:paddingHorizontal="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
             android:id="@+id/fruit"
-            android:text="Fruit"/>
+            android:text="Fruit"
+             />
         <Button
-            android:paddingHorizontal="15dp"
+            android:paddingHorizontal="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/forest"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
             android:text="Forest"/>
         <Button
-            android:paddingHorizontal="15dp"
+            android:paddingHorizontal="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/veg"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"
             android:text="Vegetable"/>
     </LinearLayout>
 
@@ -74,5 +83,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.example.nurserymanagementsystem.Blank"/>
-
 </RelativeLayout>

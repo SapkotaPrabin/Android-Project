@@ -6,20 +6,50 @@ import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupMenu;
 import android.widget.Toast;
+import android.view.LayoutInflater;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 public class Dashboard extends Activity implements PopupMenu.OnMenuItemClickListener {
     Button flower_board, fruit_board, forest_board,veg_board;
+    DBHelper DB;
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(Dashboard.this);
+        builder.setTitle("Exit App");
+        builder.setMessage("Do you want to exit App?").setCancelable(false);
+        builder.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int id) {
+                        finish();
+                    }
+                });
+        builder.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int id) {
+                        dialogInterface.cancel();
+                    }
+                });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -74,7 +104,7 @@ public class Dashboard extends Activity implements PopupMenu.OnMenuItemClickList
     public void showExitDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(Dashboard.this);
         builder.setTitle("Exit App");
-        builder.setMessage("Do you want to exit App?");
+        builder.setMessage("Do you want to Log-Out?");
         builder.setPositiveButton(
                 "Yes",
                 new DialogInterface.OnClickListener() {

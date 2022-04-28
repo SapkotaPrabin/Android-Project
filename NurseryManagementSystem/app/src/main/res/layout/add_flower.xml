@@ -37,13 +37,14 @@
         android:inputType="date"
         android:onClick="Date_Check"
         android:paddingHorizontal="8dp"
-        android:id="@+id/sow_date"/>
+        android:id="@+id/flower_sow_date"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/add"
+        android:onClick="ShowData"
         android:text="Add Flower"
         android:paddingHorizontal="20dp"
-        android:id="@+id/add_flower"/>
+        android:id="@+id/flower_add_db"/>
 </LinearLayout>

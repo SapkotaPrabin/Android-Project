@@ -1,5 +1,4 @@
 package com.example.popupmenu;
-
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
@@ -8,29 +7,23 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
 public class Date_Time extends AppCompatActivity {
     EditText dateformat;
     int day,month,year;
     TextView timeshow;
     int hour,minute;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.date_time);
         dateformat = findViewById(R.id.date_format);
         Calendar calendar = Calendar.getInstance();
-
         dateformat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,6 +40,7 @@ public class Date_Time extends AppCompatActivity {
             }
         });
         timeshow = findViewById(R.id.time);
+
         timeshow.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

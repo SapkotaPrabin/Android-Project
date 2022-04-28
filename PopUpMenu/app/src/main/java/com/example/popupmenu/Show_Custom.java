@@ -1,5 +1,4 @@
 package com.example.popupmenu;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
@@ -10,12 +9,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
-
 public class Show_Custom extends Activity {
     EditText edtFirst,edtSecond;
     Button show_custom,btnCalculate;
-    TextView showresult; 
-
+    TextView showresult;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,16 +29,13 @@ public class Show_Custom extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(Show_Custom.this);
         builder.setTitle("Calculate Sum");
         builder.setCancelable(true);
-
         LayoutInflater inflater = getLayoutInflater();
         View view = inflater.inflate(R.layout.custom_dialog,null);
         builder.setView(view);
-
         edtFirst = view.findViewById(R.id.edtFirst);
         edtSecond = view.findViewById(R.id.edtSecond);
         btnCalculate = view.findViewById(R.id.btnCalculate);
         showresult = view.findViewById(R.id.txtResult);
-
         btnCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
